@@ -1,0 +1,39 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 9 Mar 2014
+ *      Author: hp
+ */
+
+
+#include "Block.cpp"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	Rectangle rectangle;//object for class rectangle
+	Block block;//object for class rectangle
+
+	//instantiate values for declared objects
+	rectangle.setWidth(60);
+	rectangle.setLength(100);
+
+	block.setWidth(60);
+	block.setLength(100);
+	block.setHeight(10);
+    std::cout<<"dislplaying dimensions for rectangle"<<endl;
+	std::cout<<"************************************"<<endl;
+	std::cout<<"Width in cm: "<<rectangle.getWidth()<<endl;
+	std::cout<<"Length in cm: "<<rectangle.getLength()<<endl;
+	std::cout<<"Area in square cm: "<<rectangle.getArea()<<endl<<endl;
+
+	std::cout<<"dislplaying dimensions for block"<<endl;
+	std::cout<<"************************************"<<endl;
+	std::cout<<"Width in cm: "<<block.getWidth()<<endl;
+	std::cout<<"Length in cm: "<<block.getLength()<<endl;
+	std::cout<<"Height in cm: "<<block.getHeight()<<endl;
+    std::cout<<"Volume in cubic cm: "<<block.getArea()<<endl<<endl;
+
+	return 0;
+}
